@@ -1,0 +1,67 @@
+body, button, input {
+    margin: 0;
+    border: none;
+    padding: 0;
+    outline: none;
+}
+
+body{
+    text-align: center;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.timer-input-section {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="number"]{
+    width: 100px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#start-timer {
+    padding: 8px 20px;
+    background-color: #adc8f6;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.4s ease;
+}
+
+#start-timer:hover {
+    background-color: #8087f0;
+}
+
+.active-timer {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.active-timer .timer-display {
+    font-size: 24px;
+}
+
+.active-timer button {
+    padding: 8px 20px;
+    background-color: #adc8f6;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.4s ease;
+}
+
+.active-timer button:hover {
+    background-color: #e63727;
+}
