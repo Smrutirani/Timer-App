@@ -18,12 +18,15 @@
         <label for="seconds">Seconds</label>
         <input type="number" id="seconds" placeholder="Seconds">
 
-        <button id="start-timer"> Start New Timer</button>
+        <button id="start-timer"> Start </button>
     </div>
+    <div class="timerShow" >Current Timers</div>
 
-    <div class="active-timers-display" id="timer-container">
-
+    <div class="active-timers-display" id="timers-container">
+        <span id="timerStarted">You have no timers Currently!</span>
     </div>
+    
+
     <audio id="audio-alert" src="alert.mp3"></audio>
     <script src="script.js"></script>
 </body>

@@ -1,6 +1,8 @@
 const timersContainer = document.getElementById('timers-container');
 const startTimerBtn = document.getElementById('start-timer');
 
+// document.getElementById('timers-container').innerHTML="You have no timers currently!";
+
 startTimerBtn.addEventListener('click', () => {
     const hours = parseInt(document.getElementById('hours').value) || 0;
     const minutes = parseInt(document.getElementById('minutes').value) || 0;
@@ -9,7 +11,11 @@ startTimerBtn.addEventListener('click', () => {
     const totalMilliseconds = (hours * 3600 + minutes * 60 + seconds) * 1000;
     if (totalMilliseconds > 0) {
         createTimer(totalMilliseconds);
+        const element = document.getElementById("timerStarted");
+        element.remove();
+        
     }
+    
 });
 
 function createTimer(duration) {
@@ -38,7 +44,10 @@ function createTimer(duration) {
         if (remainingTime <= 0) {
             clearInterval(interval);
             timerDisplay.textContent = 'Time is UP!'; // Display "Time Ended" when the timer expires
-            timerElement.style.backgroundColor = "#d6eeef"; // Change background color for completed timer
+            timerElement.style.backgroundColor = "#e7f828"; // Change background color for completed timer
+            timerElement.style.color = "#000";
+            stopBtn.style.backgroundColor = "#444149";
+            stopBtn.style.color = "#fff";
             playAudioAlert(); // Play the audio alert when the timer expires
         } else {
             updateTimerDisplay();

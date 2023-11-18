@@ -7,7 +7,8 @@ body, button, input {
 
 body{
     text-align: center;
-    background-color: #fff;
+    background: #1D1D23;
+    color: #FFFFFF;
     font-family: Arial, sans-serif;
 }
 
@@ -27,41 +28,57 @@ input[type="number"]{
 
 #start-timer {
     padding: 8px 20px;
-    background-color: #adc8f6;
-    color: #fff;
+    background-color: #7ff630;
+    color: #191717;
     cursor: pointer;
     border: none;
-    border-radius: 4px;
+    border-radius: 20px;
     transition: background-color 0.4s ease;
 }
 
 #start-timer:hover {
-    background-color: #8087f0;
+    background-color: #baf474;
 }
 
 .active-timer {
-    border: 1px solid #ddd;
+    border: 1px solid #444149;
     padding: 10px;
     margin: 10px;
-    background-color: #fff;
-    border-radius: 4px;
+    background-color: #444149;
+    color: #fff;
+    border-radius: 7px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 .active-timer .timer-display {
     font-size: 24px;
+    /* background-color: #d4de15; */
+    /* color: #0c0707; */
 }
 
 .active-timer button {
     padding: 8px 20px;
-    background-color: #adc8f6;
-    color: #fff;
+    background-color: #e7f828;
+    color: #0c0707;
     cursor: pointer;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     transition: background-color 0.4s ease;
 }
 
-.active-timer button:hover {
-    background-color: #e63727;
+.active-timer button:hover {   
+    background-color: #d4de15;
+    color: #0c0707;
+}
+
+.timerShow {
+    /* text-align: center; */
+    margin: 20px;
+    margin-left: 40%;
+    padding: 5px;
+    border: 1px solid #444149;
+    background: #444149;
+    border-radius: 15px;
+    width: 200px;
+    
 }
